@@ -1,0 +1,9 @@
+;$Id$
+
+name = Members count
+description = "displays a list of hardcoded mermbers"
+core = 7.x
+
+package = "Custom Module"
+dependencies[] = path
+;php = 5.2

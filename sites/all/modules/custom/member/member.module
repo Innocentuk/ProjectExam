@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * implements hook_menu()
+ */
+function member_menu(){ 
+  $items  = array();
+  $items['member'] = array(
+
+    'title' => "Member",
+    'page callback' => "member_info", 
+    'access callback' => true,
+
+    'type' => MENU_NORMAL_ITEM, // drupal's default menu type 
+    'weight' => '10', // to display member link below in our nav menu
+  );    
+    return $items; // finally, return items
+}
+
+/**
+ * callback function for member
+ *
+ */
+function member_info(){
+  $output = 'Name: Eucheria </br>';
+  $output .= 'City: Copenhagen </br>';
+  $output .= 'Country: Denmark</br>';
+  return $output;
+}

@@ -1,0 +1,10 @@
+;$Id$
+
+name = Module list
+description = "Module to list enabled modules."
+core = 7.x
+
+package = Custom Module
+files[] = modlist.module
+;dependencies[] = autoload
+;php = 5.2
