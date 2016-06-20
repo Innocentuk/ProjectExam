@@ -3,12 +3,12 @@
 /**
  * implements hook_menu()
  */
-function member_menu(){ 
+function owner_menu(){ 
   $items  = array();
-  $items['member'] = array(
+  $items['Owner'] = array(
 
-    'title' => "Member",
-    'page callback' => "member_info", 
+    'title' => "Site Owner",
+    'page callback' => "owner_info", 
     'access callback' => true,
 
     'type' => MENU_NORMAL_ITEM, // drupal's default menu type 
@@ -18,11 +18,13 @@ function member_menu(){
 }
 
 /**
- * callback function for member
+ * callback function for owner
  *
  */
-function member_info(){
+function owner_info(){
   $output = 'Name: Eucheria </br>';
+  $output .= 'Gender: female</br>';
+  $output .= 'Age: askme.com</br>';
   $output .= 'City: Copenhagen </br>';
   $output .= 'Country: Denmark</br>';
   return $output;

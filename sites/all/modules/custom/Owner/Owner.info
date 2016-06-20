@@ -1,6 +1,6 @@
 ;$Id$
 
-name = Members count
+name = My module
 description = "displays a list of hardcoded mermbers"
 core = 7.x
 
